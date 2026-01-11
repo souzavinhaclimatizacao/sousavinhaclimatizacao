@@ -1,0 +1,123 @@
+/* Custom Styles for CoolFlow Pro */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #009dfe;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0080d6;
+}
+
+/* Service Modal Animation */
+#serviceModal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#serviceModal:not(.hidden) {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Prose Styles for Modal Content */
+.prose {
+    color: #3d3d3d;
+    line-height: 1.7;
+}
+
+.prose h4 {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose li {
+    margin-bottom: 0.5rem;
+}
+
+/* Form Validation Styles */
+input:invalid, textarea:invalid, select:invalid {
+    border-color: #ef4444;
+}
+
+input:valid, textarea:valid, select:valid {
+    border-color: #10b981;
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #009dfe, #0080d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo{
+    width: 18rem!important;
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    .text-responsive {
+        font-size: 1.875rem;
+    }
+
+    .logo{
+        width: 14rem!important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}

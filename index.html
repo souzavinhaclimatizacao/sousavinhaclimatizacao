@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sousa Vinha Climatização - Excelência em Climatização</title>
+    <meta
+      name="description"
+      content="Especialista em manutenção, higienização, projeto e instalação de ar-condicionado. Serviços técnicos certificados com garantia. Atendimento em toda a região."
+    />
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#009dfe",
+              "primary-dark": "#0080d6",
+              secondary: "#3d3d3d",
+              light: "#f7f7f7",
+              dark: "#000000",
+            },
+            fontFamily: {
+              sans: ["Roboto", "Open Sans", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sousa Vinha Climatização",
+        "description": "Especialista em climatização profissional com serviços de manutenção, higienização, projeto e instalação de sistemas de ar condicionado.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Região Metropolitana"
+        },
+        "telephone": "(11) 2368-7084",
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
+        "serviceType": "Climatização, Ar Condicionado, Manutenção, Instalação"
+      }
+    </script>
+  </head>
+  <body class="font-sans bg-light text-dark">
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/551123687084?text=Olá! Gostaria de solicitar um orçamento para climatização."
+      target="_blank"
+      class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 animate-pulse"
+    >
+      <i data-feather="message-circle" class="w-6 h-6"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="./img/hero.jpg"
+          alt="Técnico profissional realizando manutenção em sistema de climatização"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-dark/80 to-dark/50"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10 py-20">
+        <div class="max-w-3xl">
+          <!-- Logo -->
+          <img
+            src="./img/logo-footer.png"
+            alt="Sousa Vinha Climatização"
+            class="logo mb-6 w-96 sm:w-40 md:w-48 lg:w-56"
+          />
+        </div>
+        <div class="max-w-3xl">
+          <h1
+            class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+          >
+            Climatização Profissional com
+            <span class="text-primary">Excelência Técnica</span>
+          </h1>
+          <p class="text-xl text-white/90 mb-8 max-w-2xl">
+            Manutenção, Higienização, Projeto e Instalação especializada para
+            ambientes residenciais e comerciais.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="#contact"
+              class="bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+            >
+              <i data-feather="file-text" class="w-5 h-5"></i>
+              Solicitar Orçamento
+            </a>
+            <a
+              href="#services"
+              class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 border-2 border-white/30 hover:border-white/50 inline-flex items-center justify-center gap-2"
+            >
+              <i data-feather="grid" class="w-5 h-5"></i>
+              Ver Serviços
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <a href="#services" class="text-white">
+          <i data-feather="chevron-down" class="w-8 h-8"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-light">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="text-primary font-semibold text-lg mb-2 block"
+            >NOSSOS SERVIÇOS</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Soluções Completas em Climatização
+          </h2>
+          <p class="text-secondary text-xl max-w-3xl mx-auto">
+            Oferecemos serviços especializados para garantir conforto,
+            eficiência e qualidade do ar em seu ambiente.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
+          >
+            <div class="p-8">
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
+              >
+                <i data-feather="check-circle" class="w-8 h-8 text-primary"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Manutenção Preventiva</h3>
+              <p class="text-secondary mb-6">
+                Garanta o funcionamento adequado, aumente a vida útil e reduza
+                custos energéticos do seu sistema.
+              </p>
+              <button
+                onclick="openServiceModal(1)"
+                class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+              >
+                Saiba mais
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
+          >
+            <div class="p-8">
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
+              >
+                <i data-feather="tool" class="w-8 h-8 text-primary"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Manutenção Corretiva</h3>
+              <p class="text-secondary mb-6">
+                Solução rápida para falhas e reparos especializados com técnicos
+                certificados.
+              </p>
+              <button
+                onclick="openServiceModal(2)"
+                class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+              >
+                Saiba mais
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <!--
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
+          >
+            <div class="p-8">
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
+              >
+                <i data-feather="wind" class="w-8 h-8 text-primary"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Higienização</h3>
+              <p class="text-secondary mb-6">
+                Qualidade do ar e saúde através de limpeza profissional completa
+                dos sistemas.
+              </p>
+              <button
+                onclick="openServiceModal(3)"
+                class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+              >
+                Saiba mais
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          -->
+
+          <!-- Service Card 4 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
+          >
+            <div class="p-8">
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
+              >
+                <i data-feather="clipboard" class="w-8 h-8 text-primary"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Projeto Técnico</h3>
+              <p class="text-secondary mb-6">
+                Cálculo de carga térmica e especificação técnica para sua
+                necessidade específica.
+              </p>
+              <button
+                onclick="openServiceModal(4)"
+                class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+              >
+                Saiba mais
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
+          >
+            <div class="p-8">
+              <div
+                class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
+              >
+                <i data-feather="settings" class="w-8 h-8 text-primary"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Instalação</h3>
+              <p class="text-secondary mb-6">
+                Instalação técnica especializada seguindo normas do fabricante e
+                boas práticas.
+              </p>
+              <button
+                onclick="openServiceModal(5)"
+                class="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+              >
+                Saiba mais
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- CTA Card -->
+          <div
+            class="bg-gradient-to-br from-primary to-primary-dark rounded-2xl shadow-lg overflow-hidden p-8 flex flex-col justify-center"
+          >
+            <h3 class="text-2xl font-bold text-white mb-4">
+              Precisa de Ajuda?
+            </h3>
+            <p class="text-white/90 mb-6">
+              Não encontrou o que procurava? Entre em contato para uma avaliação
+              personalizada.
+            </p>
+            <a
+              href="#contact"
+              class="bg-white text-primary font-semibold py-3 px-6 rounded-lg hover:bg-light transition-colors text-center"
+            >
+              Fale Conosco
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="text-primary font-semibold text-lg mb-2 block"
+            >NOSSO PROCESSO</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">Como Trabalhamos</h2>
+          <p class="text-secondary text-xl max-w-3xl mx-auto">
+            Metodologia estruturada para garantir qualidade e satisfação em cada
+            etapa do serviço.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-5 gap-8 relative">
+          <!-- Connecting Line -->
+          <div
+            class="hidden md:block absolute top-12 left-1/2 transform -translate-x-1/2 w-4/5 h-0.5 bg-primary/20"
+          ></div>
+
+          <!-- Step 1 -->
+          <div class="relative text-center">
+            <div
+              class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <div
+                class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold"
+              >
+                1
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Diagnóstico</h3>
+            <p class="text-secondary">
+              Avaliação técnica inicial e orçamento detalhado
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="relative text-center">
+            <div
+              class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <div
+                class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold"
+              >
+                2
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Planejamento</h3>
+            <p class="text-secondary">
+              Definição de escopo, materiais e cronograma
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="relative text-center">
+            <div
+              class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <div
+                class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold"
+              >
+                3
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Execução</h3>
+            <p class="text-secondary">
+              Serviço realizado por profissionais certificados
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="relative text-center">
+            <div
+              class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <div
+                class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold"
+              >
+                4
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Testes</h3>
+            <p class="text-secondary">
+              Verificação de funcionamento e segurança
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="relative text-center">
+            <div
+              class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <div
+                class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold"
+              >
+                5
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Garantia</h3>
+            <p class="text-secondary">Acompanhamento pós-serviço e suporte</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-light">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="text-primary font-semibold text-lg mb-2 block"
+            >DIFERENCIAIS</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Por que Escolher a Sousa Vinha Climatização
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i data-feather="award" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Certificação</h3>
+            <p class="text-secondary">Técnicos certificados e treinados</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i data-feather="shield" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Garantia</h3>
+            <p class="text-secondary">
+              Todos os serviços com garantia de qualidade
+            </p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i data-feather="clock" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Agilidade</h3>
+            <p class="text-secondary">
+              Atendimento rápido e soluções eficientes
+            </p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6"
+            >
+              <i data-feather="dollar-sign" class="w-8 h-8 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Transparência</h3>
+            <p class="text-secondary">
+              Orçamentos detalhados sem custos ocultos
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <span class="text-primary font-semibold text-lg mb-2 block"
+            >CONTATO</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Solicite seu Orçamento
+          </h2>
+          <p class="text-secondary text-xl max-w-3xl mx-auto">
+            Entre em contato para uma avaliação gratuita e personalizada do seu
+            projeto.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div>
+            <div class="grid sm:grid-cols-2 gap-6 mb-12">
+              <div
+                class="bg-light rounded-xl p-6 hover:shadow-lg transition-shadow"
+              >
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"
+                >
+                  <i data-feather="phone" class="w-6 h-6 text-primary"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Telefone/WhatsApp</h3>
+                <a
+                  href="tel:+551123687084"
+                  class="text-secondary hover:text-primary transition-colors"
+                >
+                  +55 (11) 2368-7084
+                </a>
+              </div>
+
+              <div
+                class="bg-light rounded-xl p-6 hover:shadow-lg transition-shadow"
+                style="word-break: break-word; overflow-wrap: break-word"
+              >
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"
+                >
+                  <i data-feather="mail" class="w-6 h-6 text-primary"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Email</h3>
+                <a
+                  href="mailto:sousavinhaclimatizacao@gmail.com"
+                  class="text-secondary hover:text-primary transition-colors"
+                >
+                  sousavinhaclimatizacao@gmail.com
+                </a>
+              </div>
+
+              <div
+                class="bg-light rounded-xl p-6 hover:shadow-lg transition-shadow"
+              >
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"
+                >
+                  <i data-feather="clock" class="w-6 h-6 text-primary"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Horário</h3>
+                <p class="text-secondary">Seg-Dom: 8h-20h</p>
+              </div>
+
+              <div
+                class="bg-light rounded-xl p-6 hover:shadow-lg transition-shadow"
+              >
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"
+                >
+                  <i data-feather="map-pin" class="w-6 h-6 text-primary"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Área de Cobertura</h3>
+                <p class="text-secondary">Capital e Região Metropolitana de São Paulo</p>
+              </div>
+            </div>
+
+            <div class="bg-light rounded-2xl p-8">
+              <h3 class="text-2xl font-bold mb-4">Atendimento Rápido</h3>
+              <p class="text-secondary mb-6">
+                Para emergências ou dúvidas técnicas, nosso WhatsApp está
+                disponível para atendimento imediato.
+              </p>
+              <a
+                href="https://wa.me/551123687084?text=Olá! Preciso de atendimento urgente para climatização."
+                target="_blank"
+                class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg inline-flex items-center gap-2 transition-colors"
+              >
+                <i data-feather="message-circle" class="w-5 h-5"></i>
+                WhatsApp Rápido
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-light rounded-2xl p-8 shadow-lg">
+            <form id="contactForm" class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-secondary mb-2"
+                  >Nome Completo *</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
+                />
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-secondary mb-2"
+                    >Email *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-secondary mb-2"
+                    >Telefone *</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="service"
+                  class="block text-sm font-medium text-secondary mb-2"
+                  >Tipo de Serviço *</label
+                >
+                <select
+                  id="service"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
+                >
+                  <option value="">Selecione um serviço</option>
+                  <option value="Manutenção Preventiva">
+                    Manutenção Preventiva
+                  </option>
+                  <option value="Manutenção Corretiva">
+                    Manutenção Corretiva
+                  </option>
+                  <option value="Higienização">Higienização</option>
+                  <option value="Projeto Técnico">Projeto Técnico</option>
+                  <option value="Instalação">Instalação</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-secondary mb-2"
+                  >Mensagem *</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-6 rounded-lg text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+              >
+                Enviar Solicitação
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <sousavinha-footer></sousavinha-footer>
+    <!-- Service Modal -->
+    <div
+      id="serviceModal"
+      class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+      >
+        <div class="p-8">
+          <div class="flex justify-between items-start mb-6">
+            <div>
+              <h3 id="modalTitle" class="text-3xl font-bold"></h3>
+              <div id="modalIcon" class="mt-4"></div>
+            </div>
+            <button
+              onclick="closeServiceModal()"
+              class="text-secondary hover:text-dark p-2"
+            >
+              <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+          <div id="modalContent" class="prose max-w-none"></div>
+          <div class="mt-8 pt-6 border-t">
+            <a
+              href="#contact"
+              onclick="closeServiceModal()"
+              class="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg inline-flex items-center gap-2 transition-colors"
+            >
+              <i data-feather="file-text" class="w-5 h-5"></i>
+              Solicitar Orçamento para este Serviço
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Component Scripts -->
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+    <!-- Initialize Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
