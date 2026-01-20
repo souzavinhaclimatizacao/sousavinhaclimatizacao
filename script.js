@@ -15,19 +15,19 @@ const serviceData = {
                 <li>Prevenção de falhas e quebras inesperadas</li>
                 <li>Melhoria da qualidade do ar interno</li>
                 <li>Manutenção da eficiência do sistema</li>
+                <li>Plano mensal ou avulso</li>
             </ul>
 
             <h4>O que inclui nosso serviço:</h4>
             <ul>
-                <li>Limpeza completa de filtros e serpentinas</li>
-                <li>Verificação do nível de refrigerante</li>
+                <li>Limpeza preventiva</li>
+                <li>Aplicação de bactericída</li>
                 <li>Inspeção de componentes elétricos</li>
                 <li>Lubrificação de partes móveis</li>
                 <li>Teste de funcionamento e segurança</li>
-                <li>Relatório técnico detalhado</li>
             </ul>
 
-            <p class="mt-6"><strong>Frequência recomendada:</strong> A cada 6 meses para uso residencial, a cada 3 meses para uso comercial.</p>
+            <p class="mt-6"><strong>Frequência recomendada:</strong> A cada mês.</p>
         `
     },
     2: {
@@ -48,15 +48,14 @@ const serviceData = {
 
             <h4>Nosso Diferencial:</h4>
             <ul>
-                <li>Atendimento emergencial 24/7 para clientes corporativos</li>
+                <li>Atendimento emergencial para clientes corporativos</li>
                 <li>Peças originais com garantia do fabricante</li>
                 <li>Técnicos especializados por marca e modelo</li>
                 <li>Diagnóstico preciso com equipamentos modernos</li>
                 <li>Transparência no orçamento e prazos</li>
             </ul>
 
-            <p class="mt-6"><strong>Tempo médio de resposta:</strong> 2 horas para emergências, 24 horas para reparos programados.</p>
-        `
+           `
     },
     3: {
         title: "Higienização Profissional",
@@ -144,7 +143,7 @@ const serviceData = {
                 <li>Certificado de conformidade técnica</li>
             </ul>
 
-            <p class="mt-6"><strong>Tempo médio:</strong> 1-2 dias para sistemas split, 3-7 dias para sistemas centrais, dependendo da complexidade.</p>
+            <p class="mt-6"><strong>Tempo médio:</strong> 1-2 dias para sistemas split, 3-7 dias para sistemas centrais, dependendo da complexidade e agenda.</p>
         `
     }
 };

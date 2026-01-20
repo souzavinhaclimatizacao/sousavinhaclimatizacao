@@ -188,17 +188,57 @@ class SousavinhaFooter extends HTMLElement {
                             <div>
                                 <h3 class="footer-heading">Serviços</h3>
                                 <div class="footer-links">
-                                    <a class="footer-link">Manutenção</a>
-                                    <a class="footer-link">Instalação</a>
-                                    <a class="footer-link">Higienização</a>
+                                    <a 
+                                        href="#services"
+                                        class="footer-link"
+                                    >
+                                        Manutenção Preventiva
+                                    </a>
+                                    <a 
+                                        href="#services"
+                                        class="footer-link"
+                                    >
+                                        Manutenção Corretiva
+                                    </a>
+                                    <a 
+                                        href="#services"
+                                        class="footer-link"
+                                    >
+                                        Projeto Técnico
+                                    </a>
+                                    <a 
+                                        href="#services"
+                                        class="footer-link"
+                                    >
+                                        Instalação
+                                    </a>
                                 </div>
                             </div>
 
                             <div>
                                 <h3 class="footer-heading">Contato</h3>
                                 <div class="contact-info">
-                                    <div class="contact-item"><i data-feather="phone"></i> (11) 2368-7084</div>
-                                    <div class="contact-item"><i data-feather="mail"></i> sousavinhaclimatizacao@gmail.com</div>
+                                    <a 
+                                        href="https://wa.me/551123687084?text=Olá! Preciso de atendimento urgente para climatização." 
+                                        class="contact-item footer-link"
+                                    >
+                                        <i data-feather="message-circle"></i> 
+                                        (11) 2368-7084
+                                    </a>
+                                    <a 
+                                        href="tel:+551123687084" 
+                                        class="contact-item footer-link"
+                                    >
+                                        <i data-feather="phone"></i> 
+                                        (11) 2368-7084
+                                    </a>
+                                    <a 
+                                        href="mailto:sousavinhaclimatizacao@gmail.com"
+                                        class="contact-item footer-link"
+                                    >
+                                        <i data-feather="mail"></i>
+                                        sousavinhaclimatizacao@gmail.com
+                                    </a>
                                 </div>
                             </div>
 
